@@ -33,7 +33,7 @@ const MainContent = ({
       <main className={`flex-1 p-6 transition-all duration-200 ${
         isDeviceMobile ? '' : (isSidebarOpen ? 'ml-64' : 'ml-16')
       }`}>
-        <MainContainer  isDark={isDark} />
+        <MainContainer isDark={isDark} />
       </main>
     </div>
   );

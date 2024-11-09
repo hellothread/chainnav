@@ -26,7 +26,7 @@ const Sidebar = ({
       <nav className="pl-2 relative h-full">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className={`absolute -right-3 bottom-10 p-1.5 rounded-full transition-colors duration-200 ${
+          className={`absolute -right-3 bottom-10 p-1.5 rounded-full transition-colors duration-200 md:block hidden ${
             isDark 
               ? 'bg-gray-700 hover:bg-gray-600 text-gray-300' 
               : 'bg-white hover:bg-gray-100 text-gray-600 shadow-md'

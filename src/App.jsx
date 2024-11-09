@@ -4,7 +4,7 @@ import MainContent from './components/MainContent';
 import Footer from './components/Footer';
 
 function App() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
   const [activeSection, setActiveSection] = useState("cex");
   
   // 检测是否为移动设备
