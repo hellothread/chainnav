@@ -1,4 +1,4 @@
-import { Compass, Twitter, Search, X } from 'lucide-react';
+import { Compass, Twitter, Search, X, Github } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 import { useState, useMemo } from 'react';
 import { categories } from '../data/dataLink';
@@ -148,6 +148,18 @@ const Header = ({ isDark, setIsDark }) => {
             </button>
 
             <ThemeToggle isDark={isDark} setIsDark={setIsDark} />
+
+            <a
+              href="https://github.com/hellothread/chainnav"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`p-2 rounded-lg transition-colors duration-200 ${
+                isDark ? 'hover:bg-gray-800' : 'hover:bg-gray-100'
+              }`}
+            >
+              <Github size={20} />
+            </a>
+
             <a
               href="https://x.com/mthread_"
               target="_blank"

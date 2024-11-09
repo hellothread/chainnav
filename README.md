@@ -16,7 +16,7 @@ ChainNav 旨在为 Web3 用户提供一个简洁、实用的导航平台，集�
 
 ## 🚀 快速开始
 
-1. 访问 [ChainNav]()
+1. 访问 [ChainNav](https://chainnav.vercel.app/)
 2. 选择您感兴趣的分类
 3. 点击目标站点即可访问
 
@@ -34,9 +34,8 @@ ChainNav 旨在为 Web3 用户提供一个简洁、实用的导航平台，集�
 - 投资需谨慎，请注意风险
 
 ## 📬 联系我们
-
 - Twitter: [@mthread_](https://twitter.com/mthread_)
-
+- Github: [hellothread](https://github.com/hellothread)
 ---
 
 **ChainNav** - 您的 Web3 导航助手 | MIT License
