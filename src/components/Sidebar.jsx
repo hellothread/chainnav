@@ -1,8 +1,8 @@
 import React from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { categories } from '../data/dataLink';
 
 const Sidebar = ({ 
-  categories, 
   activeSection, 
   setActiveSection, 
   isOpen,

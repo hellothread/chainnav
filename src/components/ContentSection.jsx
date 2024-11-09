@@ -27,9 +27,12 @@ const ContentSection = ({ category, isDark }) => {
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-        {category.links.map((link, index) => (
+        {category.link.map((link, index) => (
           <div
             key={index}
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
             className={`group flex items-center justify-between px-4 py-2.5  rounded-lg ${
               isDark ? 'bg-gray-800' : 'bg-gray-100'
             }`}

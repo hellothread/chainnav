@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
-import { categories } from './data/categories';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
 import Footer from './components/Footer';
 
 function App() {
   const [isDark, setIsDark] = useState(false);
-  const [activeSection, setActiveSection] = useState(categories[0].id);
+  const [activeSection, setActiveSection] = useState("cex");
   
   // 检测是否为移动设备
   const isMobile = () => {
@@ -41,7 +40,6 @@ function App() {
       <Header isDark={isDark} setIsDark={setIsDark} />
       
       <MainContent 
-        categories={categories}
         activeSection={activeSection}
         setActiveSection={setActiveSection}
         isSidebarOpen={isSidebarOpen}
