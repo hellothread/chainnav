@@ -1,18 +1,19 @@
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
-import Bnb from 'cryptocurrency-icons/svg/color/bnb.svg';
 
-
-
-
+const getFaviconUrl = (url) => {
+  try {
+    const domain = new URL(url).hostname;
+    // 使用 Google Favicon API
+    return `https://www.google.com/s2/favicons?domain=${domain}&sz=32`;
+    // 或者直接获取网站 favicon
+    // return `https://${domain}/favicon.ico`;
+  } catch (error) {
+    return null;
+  }
+};
 
 const ContentSection = ({ category, isDark }) => {
-
-
-  const IconRenderer = ({ icon, size = 20 }) => {
-    return <img src={Bnb} width={size} height={size} alt={`${icon} icon`} />;
-  };
-
 
   return (
     <section id={category.id} className="scroll-mt-20">
@@ -25,33 +26,27 @@ const ContentSection = ({ category, isDark }) => {
         <h2 className="text-2xl font-bold">{category.title}</h2>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 3xl:grid-cols-8 4xl:grid-cols-10 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         {category.links.map((link, index) => (
           <a
             key={index}
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className={`group flex items-center justify-between p-4 rounded-lg transition-all duration-200 ${
-              isDark 
-                ? 'bg-gray-800 hover:bg-gray-700' 
-                : 'bg-white hover:bg-gray-50 border border-gray-200'
+            className={`group flex items-center justify-between px-4 py-2.5  rounded-lg ${
+              isDark ? 'bg-gray-800' : 'bg-gray-100'
             }`}
           >
             <div className="flex items-center gap-3">
-              <div className={`p-2 rounded-lg transition-colors duration-200 ${
-                isDark 
-                  ? 'bg-gray-700 group-hover:bg-gray-600' 
-                  : 'bg-gray-100 group-hover:bg-gray-200'
-              }`}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
-              }}
-              >
-                {link.icon}
-              </div>
+              <img 
+                src={getFaviconUrl(link.url)}
+                alt={`${link.name} icon`}
+                className="w-6 h-6"
+                onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1"></svg>';
+                    }}
+                /> 
               <div>
                 <h3 className="font-medium">{link.name}</h3>
                 <p className={`text-sm ${
@@ -59,11 +54,7 @@ const ContentSection = ({ category, isDark }) => {
                 }`}>{link.description}</p>
               </div>
             </div>
-            <ExternalLink className={`w-4 h-4 transition-colors duration-200 ${
-              isDark 
-                ? 'text-gray-400 group-hover:text-blue-400' 
-                : 'text-gray-500 group-hover:text-blue-500'
-            }`} />
+            <ExternalLink className="w-4 h-4" />
           </a>
         ))}
       </div>
