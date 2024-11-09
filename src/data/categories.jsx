@@ -129,16 +129,6 @@ export const categories = [
         description: '融资查询'
       },
       { 
-        name: 'Coinlist',
-        url: 'https://coinlist.co/',
-        description: 'Launchpad 平台'
-      },
-      { 
-        name: 'Coinowl',
-        url: 'https://coinowl.io/homeScreen',
-        description: 'IDO，IEO信息'
-      },
-      { 
         name: 'Crunchbase',
         url: 'https://www.crunchbase.com',
         description: '融资查询'
