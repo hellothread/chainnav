@@ -1,7 +1,19 @@
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
+import Bnb from 'cryptocurrency-icons/svg/color/bnb.svg';
+
+
+
+
 
 const ContentSection = ({ category, isDark }) => {
+
+
+  const IconRenderer = ({ icon, size = 20 }) => {
+    return <img src={Bnb} width={size} height={size} alt={`${icon} icon`} />;
+  };
+
+
   return (
     <section id={category.id} className="scroll-mt-20">
       <div className="flex items-center gap-3 mb-6">
@@ -31,7 +43,13 @@ const ContentSection = ({ category, isDark }) => {
                 isDark 
                   ? 'bg-gray-700 group-hover:bg-gray-600' 
                   : 'bg-gray-100 group-hover:bg-gray-200'
-              }`}>
+              }`}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}
+              >
                 {link.icon}
               </div>
               <div>
