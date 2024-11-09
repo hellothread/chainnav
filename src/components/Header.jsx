@@ -35,7 +35,7 @@ const Header = ({ isDark, setIsDark }) => {
     <div 
       className={`${
         isMobile 
-          ? 'mt-4' 
+          ? '' 
           : 'absolute top-full left-0 right-0 mt-2'
       } py-2 rounded-lg shadow-lg ${
         isDark ? 'bg-gray-800' : 'bg-white'
