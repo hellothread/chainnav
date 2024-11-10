@@ -55,7 +55,11 @@ const ContentSection = ({ category, isDark }) => {
                     }}
                 /> 
               <div>
-                <h3 className="font-medium">{link.name}</h3>
+                <h3 className="font-medium">
+                  <a href={link.url} target="_blank" rel="noopener noreferrer">
+                    {link.name}
+                  </a>
+                </h3>
                 <p className={`text-sm ${
                   isDark ? 'text-gray-400' : 'text-gray-600'
                 }`}>{link.description}</p>

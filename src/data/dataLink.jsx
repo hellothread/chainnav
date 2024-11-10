@@ -43,7 +43,7 @@ export const memecoin = [
     description: 'Sol链meme币发币平台'
   },
   { 
-    name: 'pepeboost',
+    name: 'pepe boost',
     url: 'https://linktr.ee/pepeboost',
     description: '最受欢迎的TG交易机器人之一'
   },
@@ -63,12 +63,12 @@ export const memecoin = [
     description: 'DEX 数据分析工具'
   },
   { 
-    name: 'Avedex',
+    name: 'Ave Dex',
     url: 'https://avedex.cc',
     description: 'Avalanche 上的DEX'
   },
   { 
-    name: 'Dextools',
+    name: 'DEXTools',
     url: 'https://www.dextools.io/app/',
     description: 'DEX 数据分析工具'
   },
@@ -104,17 +104,17 @@ export const depin = [
 //investment link
 export const investment = [
   { 
-    name: 'Rootdata',
+    name: 'RootData',
     url: 'https://www.rootdata.com',
     description: '融资查询'
   },
   { 
-    name: 'Chainbroker',
+    name: 'Chain Broker',
     url: 'https://chainbroker.io/',
     description: '融资查询'
   },
   { 
-    name: 'Crunchbase',
+    name: 'crunchbase',
     url: 'https://www.crunchbase.com',
     description: '融资查询'
   },
@@ -124,12 +124,12 @@ export const investment = [
     description: '融资查询'
   },
   { 
-    name: 'Cryptorank',
+    name: 'Crypto Rank',
     url: 'https://cryptorank.io',
     description: '融资查询，IDO，IEO信息'
   },
   { 
-    name: 'Cypherhunter',
+    name: 'Cypher Hunter',
     url: 'http://cypherhunter.com/en',
     description: 'Launchpad平台'
   },
@@ -139,23 +139,23 @@ export const investment = [
     description: '融资查询'
   },
   { 
-    name: 'Dovemetrics',
+    name: 'Dove Metrics',
     url: 'https://www.dovemetrics.com',
     description: '融资查询'
   },
   { 
-    name: 'Icoanalytics',
+    name: 'ICO Analytics',
     url: 'https://icoanalytics.org/',
     description: 'ICO日历'
   },
   { 
-    name: 'Icodrops',
+    name: 'ICO Drops',
     url: 'https://icodrops.com/',
     description: 'IDO、IEO信息'
   },
   
   { 
-    name: 'Rugdoc',
+    name: 'RugDoc',
     url: 'https://rugdoc.io/',
     description: 'IDO、IEO信息'
   },
@@ -168,18 +168,18 @@ export const analytics = [
     description: '链上地址分析'
   },
   { 
-    name: '巨鲸排行榜',
+    name: 'BitinfoCharts',
     url: 'https://bitinfocharts.com/',
-    description: '巨鲸地址排行榜 分析'
+    description: 'btc、eth、doge等价格、挖矿数据、市值和区块信息等核心指标。'
   },
   { 
     name: 'CoinMarketCap',
     url: 'https://coinmarketcap.com/',
-    description: '行情综合数据'
+    description: '免费提供比特币和众多代币的实时及历史数据。'
   },{ 
-    name: '交易所数据分析',
+    name: 'CryptoQuant',
     url: 'https://cryptoquant.com/asset/btc/summary',
-    description: '交易所数据分析'
+    description: '比特币在交易所钱包之间的资金流向分析，用于评估投资者行为。'
   },
   { 
     name: 'Dune',
@@ -205,13 +205,13 @@ export const categories = [
   },
   {
     id: 'investment',
-    title: '融资',
+    title: 'Investment',
     icon: <Banknote size={24} />,
     link: investment
   },
   {
     id: 'analytics',
-    title: '数据分析',
+    title: 'Analytics',
     icon: <FileText size={24} />,
     link: analytics
   },

@@ -23,7 +23,7 @@ const Sidebar = ({
         ? 'bg-gray-800/50 backdrop-blur-sm' 
         : 'bg-white/50 backdrop-blur-sm border-r border-gray-100'
     } ${isOpen ? 'w-64' : 'w-16'}`}>
-      <nav className="p-2 relative h-full">
+      <nav className="py-2 pl-2 relative h-full">
         <button
           onClick={() => setIsOpen(!isOpen)}
           className={`absolute -right-3 bottom-10 p-1.5 rounded-full transition-colors duration-200 md:block hidden ${
