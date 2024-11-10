@@ -21,9 +21,9 @@ const Sidebar = ({
     <aside className={`fixed left-0 top-16 h-[calc(100vh-4rem)] transition-all duration-300 ${
       isDark 
         ? 'bg-gray-800/50 backdrop-blur-sm' 
-        : 'bg-white/50 backdrop-blur-sm border-r border-gray-200'
+        : 'bg-white/50 backdrop-blur-sm border-r border-gray-100'
     } ${isOpen ? 'w-64' : 'w-16'}`}>
-      <nav className="pl-2 relative h-full">
+      <nav className="p-2 relative h-full">
         <button
           onClick={() => setIsOpen(!isOpen)}
           className={`absolute -right-3 bottom-10 p-1.5 rounded-full transition-colors duration-200 md:block hidden ${
@@ -50,10 +50,10 @@ const Sidebar = ({
               <li key={category.id}>
                 <button
                   onClick={() => scrollToSection(category.id)}
-                  className={`w-full rounded-lg transition-all duration-200 ${
+                  className={`w-full rounded-lg transition-all duration-200 p-2.5  ${
                     isOpen 
-                      ? 'px-4 py-2.5 text-left flex items-center gap-3' 
-                      : 'p-2.5 flex justify-center items-center'
+                      ? 'text-left flex items-center gap-3' 
+                      : 'flex justify-center items-center'
                   } ${
                     activeSection === category.id
                       ? isDark
@@ -65,9 +65,8 @@ const Sidebar = ({
                   }`}
                   title={!isOpen ? category.title : undefined}
                 >
-                  <div className={`rounded-lg transition-colors duration-200 ${
-                    isOpen ? 'p-2' : 'p-1.5'
-                  } ${
+                  <div className={`rounded-lg transition-colors duration-200 p-1.5
+                  ${
                     activeSection === category.id
                       ? isDark
                         ? 'bg-blue-500/20'
@@ -76,9 +75,7 @@ const Sidebar = ({
                         ? 'bg-gray-700/50'
                         : 'bg-gray-100'
                   }`}>
-                    {React.cloneElement(category.icon, {
-                      size: isOpen ? 20 : 18
-                    })}
+                    {React.cloneElement(category.icon, {size: 18})}
                   </div>
                   {isOpen && <span>{category.title}</span>}
                 </button>

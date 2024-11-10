@@ -161,7 +161,7 @@ export const investment = [
   },
 ]
 //data link
-export const data = [
+export const analytics = [
   { 
     name: 'Arkham Intelligence',
     url: 'https://www.arkhamintelligence.com/',
@@ -190,12 +190,7 @@ export const data = [
 
 // 分类
 export const categories = [
-  {
-    id: 'cex',
-    title: 'CEX',
-    icon: <ArrowLeftRight size={24} />,
-    link: cex
-  },
+ 
   {
     id: 'memecoin',
     title: 'MemeCoin',
@@ -210,14 +205,20 @@ export const categories = [
   },
   {
     id: 'investment',
-    title: 'Investment',
+    title: '融资',
     icon: <Banknote size={24} />,
     link: investment
   },
   {
-    id: 'data',
-    title: 'Data',
+    id: 'analytics',
+    title: '数据分析',
     icon: <FileText size={24} />,
-    link: data
-  }
+    link: analytics
+  },
+  {
+    id: 'cex',
+    title: 'CEX',
+    icon: <ArrowLeftRight size={24} />,
+    link: cex
+  },
 ]

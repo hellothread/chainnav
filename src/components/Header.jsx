@@ -98,9 +98,11 @@ const Header = ({ isDark, setIsDark }) => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-10 transition-colors duration-200 ${
-      isDark ? 'bg-gray-900/90' : 'bg-white/90'
+      isDark 
+        ? 'bg-gray-900/90' 
+        : 'bg-white/90 border-b border-gray-100'
     } backdrop-blur-sm`}>
-      <div className="mx-auto px-7 py-4">
+      <div className="mx-auto px-5 py-4">
         <div className="flex items-center justify-between gap-4">
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
@@ -181,9 +183,7 @@ const Header = ({ isDark, setIsDark }) => {
         }`}>
           <div className="flex flex-col h-screen">
             {/* 顶部搜索栏 */}
-            <div className={`flex-shrink-0 px-4 py-2 border-b ${
-              isDark ? 'border-gray-800' : 'border-gray-200'
-            }`}>
+            <div className={`flex-shrink-0 px-4 py-3.5`}>
               <div className="flex items-center gap-3">
                 <div className={`flex-1 flex items-center ${
                   isDark ? 'bg-gray-800' : 'bg-gray-100'
@@ -221,7 +221,7 @@ const Header = ({ isDark, setIsDark }) => {
                   <SearchResults isMobile={true} />
                 </div>
               ) : searchQuery.trim() ? (
-                <div className={`p-4 text-sm ${
+                <div className={`p-4 bg-gray-800 text-sm ${
                   isDark ? 'text-gray-400' : 'text-gray-600'
                 }`}>
                   未找到相关结果

@@ -14,6 +14,16 @@ ChainNav 旨在为 Web3 用户提供一个简洁、实用的导航平台，集�
 | 📊 | Analytics | 数据分析 |
 | 🛠 | Tools | 实用工具 |
 
+
+## 开发计划
+
+### 近期计划
+- 优化搜索体验
+- 支持模糊匹配
+- 增加资源分类
+- UI/UX 优化
+
+
 ## 🚀 快速开始
 
 1. 访问 [ChainNav](https://chainnav.vercel.app/)
