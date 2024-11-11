@@ -1,6 +1,24 @@
 import React from 'react';
-import { ArrowLeftRight, Rocket, Hammer, Banknote, FileText} from 'lucide-react';
+import { Building2, Rocket, Hammer, Banknote, FileText, ShieldOff, Wallet, Gift, Newspaper } from 'lucide-react';
 
+//撸毛必备
+const airdropTools = [
+  {
+    name:"Ads指纹浏览器",
+    url:"https://share.adspower.net/z75oPhFmQfkdXtT",
+    description:"Ads指纹浏览器"
+  },
+  {
+    name:"HubStudio",
+    url:"http://suo.im/a28Vk",
+    description:"HUB指纹浏览器"
+  },
+  {
+    name:"ip代理",
+    url:"https://www.webshare.io/?referral_code=1vdc4cnb52dl",
+    description:"ip代理,最便宜的ip代理"
+  }
+]
 
 //cex link
 export const cex = [
@@ -167,6 +185,11 @@ export const analytics = [
     url: 'https://www.arkhamintelligence.com/',
     description: '链上地址分析'
   },
+  {
+    name:"Alternative",
+    url:"https://alternative.me/crypto/fear-and-greed-index/",
+    description:"加密货币市场情绪指数,贪婪恐惧指数"
+  },
   { 
     name: 'BitinfoCharts',
     url: 'https://bitinfocharts.com/',
@@ -187,38 +210,165 @@ export const analytics = [
     description: '综合数据分析'
   }
 ]
+//新闻
+const news = [
+  {
+    name:"金十",
+    url:"https://www.jin10.com/",
+    description:"金十,财经新闻"
+  },
+  {
+    name:"Foresight",
+    url:"https://foresightnews.pro/",
+    description:"加密货币新闻资讯"
+  },
+  {
+    name:"律动",
+    url:"https://www.theblockbeats.info/",
+    description:"加密货币新闻资讯"
+  },
+  {
+    name:"CoinDesk",
+    url:"https://www.coindesk.com/",
+    description:"加密货币新闻资讯"
+  },
+  {
+    name:"SmartLiquidity",
+    url:"https://smartliquidity.info/",
+    description:"加密货币新闻资讯"
+  },
+  {
+    name:"PANews",
+    url:"https://www.panewslab.com/zh/index.html",
+    description:"加密货币新闻资讯"
+  }
+]
+//取消授权
+export const authorizationRevocation = [
+  { 
+    name: 'Revoke.cash',
+    url: 'https://revoke.cash/zh',
+    description: '常用的授权取消工具Revoke.cash'
+  },
+  { 
+    name: 'ETH撤销授权',
+    url: 'https://etherscan.io/tokenapprovalchecker',
+    description: 'eth链代币或者NFT取消授权'
+  },
+  { 
+    name: 'Arb撤销授权',
+    url: 'https://arbiscan.io/tokenapprovalchecker',
+    description: 'arb链代币或者NFT取消授权'
+  },
+  { 
+    name: 'OP链取消授权',
+    url: 'https://optimistic.etherscan.io/tokenapprovalchecker',
+    description: 'op链代币或者NFT取消授权'
+  },
+  { 
+    name: '币安链撤销授权',
+    url: 'https://bscscan.com/tokenapprovalchecker',
+    description: 'bsc链代币或者NFT取消授权'
+  },
+  { 
+    name: '马蹄链撤销授权',
+    url: 'https://polygonscan.com/tokenapprovalchecker',
+    description: 'polygon链代币或者NFT取消授权'
+  }
+];
+
+//钱包
+export const wallet = [
+  { 
+    name: 'MetaMask',
+    url: 'https://metamask.io/',
+    description: '常用的小狐狸'
+  },
+  { 
+    name: 'OKX的web3钱包',
+    url: 'https://www.okx.com/cn/web3',
+    description: 'OK的web3钱包,支持多链'
+  },
+   { 
+    name: 'Phantom',
+    url: 'https://phantom.app/',
+    description: 'sol链钱包'
+  },
+  {
+    name: 'Unisat',
+    url: 'https://unisat.io/',
+    description: 'Btc钱包'
+  },{
+    name: 'Xverse',
+    url: 'https://xverse.app/',
+    description: 'Btc钱包'
+  },
+  { 
+    name: 'Keplr',
+    url: 'https://www.keplr.app/',
+    description: 'cosmos生态的钱包'
+  },
+ 
+];
 
 // 分类
 export const categories = [
- 
+  {
+    id: 'airdropTools',
+    title: '撸毛必备',
+    icon: <Gift size={24} />,
+    link: airdropTools
+  },
+ {
+    id: 'wallet',
+    title: '钱包',
+    icon: <Wallet size={24} />,
+    link: wallet
+  },
+  {
+    id: 'cex',
+    title: '交易所',
+    icon: <Building2 size={24} />,
+    link: cex
+  },
   {
     id: 'memecoin',
     title: 'MemeCoin',
     icon: <Rocket size={24} />,
     link: memecoin
-  },
+  }, 
+  
   {
     id: 'depin',
     title: 'Depin',
     icon: <Hammer size={24} />,
     link: depin
   },
+
   {
     id: 'investment',
-    title: 'Investment',
+    title: '融资',
     icon: <Banknote size={24} />,
     link: investment
   },
   {
     id: 'analytics',
-    title: 'Analytics',
+    title: '数据分析',
     icon: <FileText size={24} />,
     link: analytics
   },
+  
   {
-    id: 'cex',
-    title: 'CEX',
-    icon: <ArrowLeftRight size={24} />,
-    link: cex
+    id: 'news',
+    title: '新闻资讯',
+    icon: <Newspaper size={24} />,
+    link: news
   },
+  {
+    id: 'authorizationRevocation',
+    title: '取消授权',
+    icon: <ShieldOff size={24} />,
+    link: authorizationRevocation
+  },
+ 
 ]
