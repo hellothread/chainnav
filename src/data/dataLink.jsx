@@ -41,6 +41,11 @@ export const cex = [
     name: 'Gateio',
     url: 'https://www.gateio24.com/ref/BlJDBlo?ref_type=102',
     description: '安全可靠的数字资产交易所'
+  },
+  {
+    name:"火币",
+    url:"https://www.huobi.bs/zh-cn/",
+    description:"火币交易所"
   }
 ]
 //memecoin link
@@ -226,6 +231,21 @@ const news = [
     name:"律动",
     url:"https://www.theblockbeats.info/",
     description:"加密货币新闻资讯"
+  }, 
+  {
+    name:"PANews",
+    url:"https://www.panewslab.com/zh/index.html",
+    description:"加密货币新闻资讯"
+  },
+  {
+    name:"链捕手",
+    url:"https://www.chaincatcher.com/",
+    description:"加密货币新闻资讯"
+  },
+  {
+    name:"Odaily",
+    url:"https://www.odaily.news/",
+    description:"加密货币新闻资讯"
   },
   {
     name:"CoinDesk",
@@ -237,11 +257,7 @@ const news = [
     url:"https://smartliquidity.info/",
     description:"加密货币新闻资讯"
   },
-  {
-    name:"PANews",
-    url:"https://www.panewslab.com/zh/index.html",
-    description:"加密货币新闻资讯"
-  }
+ 
 ]
 //取消授权
 export const authorizationRevocation = [
