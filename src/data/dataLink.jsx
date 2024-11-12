@@ -1,5 +1,5 @@
 import React from 'react';
-import { Building2, Rocket, Hammer, Banknote, FileText, ShieldOff, Wallet, Gift, Newspaper } from 'lucide-react';
+import { Building2, Rocket, Hammer, Banknote, FileText, Wallet, Gift, Newspaper, ArrowLeftRight, Link } from 'lucide-react';
 
 //撸毛必备
 const airdropTools = [
@@ -17,6 +17,16 @@ const airdropTools = [
     name:"ip代理",
     url:"https://www.webshare.io/?referral_code=1vdc4cnb52dl",
     description:"ip代理,最便宜的ip代理"
+  },
+  { 
+    name: '5sim',
+    url: 'https://5sim.net/zh',
+    description: '接码平台'
+  },
+  { 
+    name: 'Earni',
+    url: 'https://earni.fi/login',
+    description: '空投查询'
   }
 ]
 
@@ -44,10 +54,63 @@ export const cex = [
   },
   {
     name:"火币",
-    url:"https://www.huobi.bs/zh-cn/",
+    url:"https://www.htx.com/zh-cn/",
     description:"火币交易所"
   }
 ]
+
+// DEX 去中心化交易所
+export const dexLinks = [
+  {
+    name: 'Uniswap',
+    url: 'https://app.uniswap.org/#/swap',
+    description: 'ETH 去中心化交易所'
+  },
+  {
+    name: 'Odos',
+    url: 'https://app.odos.xyz/',
+    description: '去中心化交易所'
+  },
+  {
+    name: 'PancakeSwap',
+    url: 'https://pancakeswap.finance',
+    description: 'BSC 去中心化交易所'
+  },
+  {
+    name: 'Jupiter',
+    url: 'https://jup.ag/swap',
+    description: 'SOL 去中心化交易所'
+  },
+  {
+    name: 'CoreDAO',
+    url: 'https://bridge.coredao.org/bridge',
+    description: 'CoreDAO跨链'
+  }
+];
+//跨链
+export const crossChain = [
+  {
+    name: 'wormhole',
+    url: 'https://wormhole.com',
+    description: '跨链桥'
+  },
+  {
+    name: 'bungee',
+    url: 'https://www.bungee.exchange/?intro=true',
+    description: 'bungee跨链'
+  },
+  {
+    name: 'stargate',
+    url: 'https://stargate.finance/bridge',
+    description: 'stargate跨链'
+  },
+  {
+    name: 'orbiter',
+    url: 'https://www.orbiter.finance/',
+    description: 'orbiter跨链'
+  }
+]
+
 //memecoin link
 export const memecoin = [
   { 
@@ -88,14 +151,28 @@ export const memecoin = [
   { 
     name: 'Ave Dex',
     url: 'https://avedex.cc',
-    description: 'Avalanche 上的DEX'
+    description: '看k线'
   },
   { 
     name: 'DEXTools',
     url: 'https://www.dextools.io/app/',
     description: 'DEX 数据分析工具'
   },
-
+  { 
+    name: 'Tokensniffer',
+    url: 'https://tokensniffer.com',
+    description: '合约安全性检测'
+  },
+  { 
+    name: 'Honeypot',
+    url: 'https://honeypot.is',
+    description: '貔貅检测'
+  },
+  { 
+    name: 'Revoke.cash',
+    url: 'http://revoke.cash',
+    description: '取消授权'
+  },
 ]
 //depin link
 export const depin = [
@@ -259,39 +336,7 @@ const news = [
   },
  
 ]
-//取消授权
-export const authorizationRevocation = [
-  { 
-    name: 'Revoke.cash',
-    url: 'https://revoke.cash/zh',
-    description: '常用的授权取消工具Revoke.cash'
-  },
-  { 
-    name: 'ETH撤销授权',
-    url: 'https://etherscan.io/tokenapprovalchecker',
-    description: 'eth链代币或者NFT取消授权'
-  },
-  { 
-    name: 'Arb撤销授权',
-    url: 'https://arbiscan.io/tokenapprovalchecker',
-    description: 'arb链代币或者NFT取消授权'
-  },
-  { 
-    name: 'OP链取消授权',
-    url: 'https://optimistic.etherscan.io/tokenapprovalchecker',
-    description: 'op链代币或者NFT取消授权'
-  },
-  { 
-    name: '币安链撤销授权',
-    url: 'https://bscscan.com/tokenapprovalchecker',
-    description: 'bsc链代币或者NFT取消授权'
-  },
-  { 
-    name: '马蹄链撤销授权',
-    url: 'https://polygonscan.com/tokenapprovalchecker',
-    description: 'polygon链代币或者NFT取消授权'
-  }
-];
+
 
 //钱包
 export const wallet = [
@@ -353,7 +398,18 @@ export const categories = [
     icon: <Rocket size={24} />,
     link: memecoin
   }, 
-  
+  {
+    id: 'dexLinks',
+    title: 'Swap',
+    icon: <ArrowLeftRight size={24} />,
+    link: dexLinks
+  },
+  {
+    id: 'crossChain',
+    title: '跨链',
+    icon: <Link size={24} />,
+    link: crossChain
+  },
   {
     id: 'depin',
     title: 'Depin',
@@ -380,11 +436,5 @@ export const categories = [
     icon: <Newspaper size={24} />,
     link: news
   },
-  {
-    id: 'authorizationRevocation',
-    title: '取消授权',
-    icon: <ShieldOff size={24} />,
-    link: authorizationRevocation
-  },
- 
+
 ]
