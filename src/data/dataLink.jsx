@@ -80,11 +80,6 @@ export const dexLinks = [
     name: 'Jupiter',
     url: 'https://jup.ag/swap',
     description: 'SOL 去中心化交易所'
-  },
-  {
-    name: 'CoreDAO',
-    url: 'https://bridge.coredao.org/bridge',
-    description: 'CoreDAO跨链'
   }
 ];
 //跨链
@@ -108,6 +103,26 @@ export const crossChain = [
     name: 'orbiter',
     url: 'https://www.orbiter.finance/',
     description: 'orbiter跨链'
+  },
+  {
+    name: 'CoreDAO',
+    url: 'https://bridge.coredao.org/bridge',
+    description: 'CoreDAO跨链'
+  },
+  {
+    name: 'jumper',
+    url: 'https://jumper.exchange/zh/',
+    description: 'jumper跨链'
+  },
+  {
+    name: 'squidrouter',
+    url: 'https://app.squidrouter.com/',
+    description: 'squidrouter跨链'
+  },
+  {
+    name: 'relay',
+    url: 'https://relay.link/bridge',
+    description: 'relay跨链'
   }
 ]
 
