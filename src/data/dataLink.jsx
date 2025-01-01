@@ -123,6 +123,11 @@ export const crossChain = [
     name: 'relay',
     url: 'https://relay.link/bridge',
     description: 'relay跨链'
+  },
+  {
+    name: 'cometbridge',
+    url: 'https://cometbridge.app/',
+    description: '可跨gas'
   }
 ]
 
