@@ -1,5 +1,5 @@
 import React from 'react';
-import { Building2, Rocket, Hammer, Banknote, FileText, Wallet, Gift, Newspaper, ArrowLeftRight, Link } from 'lucide-react';
+import { Building2, Rocket, Hammer, Droplet,Banknote, FileText, Wallet, Gift, Newspaper, ArrowLeftRight, Link } from 'lucide-react';
 
 //撸毛必备
 const airdropTools = [
@@ -356,8 +356,6 @@ const news = [
   },
  
 ]
-
-
 //钱包
 export const wallet = [
   { 
@@ -391,6 +389,31 @@ export const wallet = [
   },
  
 ];
+
+// faucet
+export const faucet = [
+  {
+    name: 'Ethereum Sepolia Faucet',
+    url: 'https://www.alchemy.com/faucets/ethereum-sepolia',
+    description: 'Ethereum Sepolia Faucet'
+  },
+  {
+    name: 'Quicknode Faucets',
+    url: 'https://faucet.quicknode.com/drip',
+    description: 'Quicknode Faucets'
+  },
+  {
+    name: 'Alchemy Faucets',
+    url: 'https://www.alchemy.com/faucets',
+    description: 'Alchemy Faucets'
+  },
+  {
+    name: 'OKX Faucet',
+    url: 'https://www.okx.com/zh-hans/web3/faucet',
+    description: 'OKX Faucet'
+  }
+]
+
 
 // 分类
 export const categories = [
@@ -429,6 +452,12 @@ export const categories = [
     title: '跨链',
     icon: <Link size={24} />,
     link: crossChain
+  },
+  {
+    id: 'faucet',
+    title: 'Faucet',
+    icon: <Droplet size={24} />,
+    link: faucet
   },
   {
     id: 'depin',
